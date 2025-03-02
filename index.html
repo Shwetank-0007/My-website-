@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Multi-Niche Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1 id="site-title">My Multi-Niche Blog</h1>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <!-- Animated Quote Section -->
+    <div class="quote-container">
+        <p id="quote-text"></p>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search blogs...">
+        <button onclick="searchPosts()">🔍</button>
+    </div>
+
+    <!-- Blog Categories -->
+    <nav class="categories">
+        <button onclick="filterCategory('trading')">Trading</button>
+        <button onclick="filterCategory('tech')">Tech</button>
+        <button onclick="filterCategory('books')">Books</button>
+        <button onclick="filterCategory('business')">Business</button>
+    </nav>
+
+    <!-- Blog Posts -->
+    <main id="blog-posts">
+        <article class="post" data-category="trading">
+            <h2>Understanding Support & Resistance</h2>
+            <p>Learn how to avoid fake breakouts in binary trading.</p>
+        </article>
+        <article class="post" data-category="tech">
+            <h2>Best Programming Languages for 2025</h2>
+            <p>Which languages should you learn for the future?</p>
+        </article>
+        <article class="post" data-category="books">
+            <h2>Top 5 Must-Read Books</h2>
+            <p>Expand your mind with these amazing books.</p>
+        </article>
+        <article class="post" data-category="business">
+            <h2>How to Start an Online Business</h2>
+            <p>Learn step-by-step how to build a profitable business.</p>
+        </article>
+    </main>
+
+</body>
+</html>
